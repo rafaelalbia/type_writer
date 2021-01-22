@@ -2,9 +2,12 @@
 
     function typeWritter(element) {
         const arrayText = element.innerHTML.split('');
+        element.innerHTML('');
+        arrayText.forEach((letter, index) => {
+            setTimout(function() {
 
-
-
+            }, 75);
+        });
     }
 
     const title = document.querySelector('h1');
