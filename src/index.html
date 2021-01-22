@@ -4,9 +4,7 @@
         const arrayText = element.innerHTML.split('');
         element.innerHTML('');
         arrayText.forEach((letter, index) => {
-            setTimout(function() {
-
-            }, 75);
+            setTimout(() => element.innerHTML += letter, 75 * index);
         });
     }
 
